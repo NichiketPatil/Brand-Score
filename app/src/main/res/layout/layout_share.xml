@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/share_card"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_height="340dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/gradient"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:elevation="15dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:text="HOW MUCH INDIAN YOU ARE!"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"/>
+            <ImageView
+                android:id="@+id/shared_image"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                android:layout_below="@+id/text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/whatsapp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_whatsapp"/>
+
+            <ImageView
+                android:id="@+id/facebook"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_facebook"/>
+
+            <ImageView
+                android:id="@+id/instagram"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_instagram"/>
+        </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

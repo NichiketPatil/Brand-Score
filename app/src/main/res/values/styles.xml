@@ -1,0 +1,12 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/themeColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#fff</item>
+        <item name="homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

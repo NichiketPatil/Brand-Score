@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="2dp"
+                android:text="Brand" />
+
+            <EditText
+                android:id="@+id/edit_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="2dp"
+                android:autofillHints="country"
+                android:textSize="15sp"
+                android:background="@drawable/outline_edittext"
+                android:hint="country"
+                android:padding="2dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:layout_below="@id/edit_country"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="2dp"
+                android:textSize="15sp"
+                android:autofillHints="no"
+                android:background="@drawable/outline_edittext"
+                android:padding="5dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_margin="5dp"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="2dp"
+                android:text="country" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/country"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="2dp"
+                android:padding="5dp"
+                android:scrollbars="vertical"
+                android:text="desc" />
+
+            <TextView
+                android:id="@+id/edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp"
+                android:text="EDIT"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/save_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_desc"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="CANCEL"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="SAVE"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
